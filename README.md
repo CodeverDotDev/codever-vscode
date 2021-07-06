@@ -1,6 +1,10 @@
 # Codever Visual Studio Code Extension
 
-Save and search snippets to [Codever](https://www.codever.land) from Visual Studio Code
+Save and search snippets to [Codever](https://www.codever.land) from Visual Studio Code. You need to have a 
+[registered account](https://www.codever.land/register) first.
+
+> [Extensions](https://www.codever.land/howto) are available also for browsers and IntelliJ IDEs. See our [howto](https://www.codever.land/howto) guides
+> to help you get started.
 
 ## Features
 
