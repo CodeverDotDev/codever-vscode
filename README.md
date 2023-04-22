@@ -1,9 +1,9 @@
 # Codever Visual Studio Code Extension
 
-Save and search snippets to [Codever](https://www.codever.land) from Visual Studio Code. You need to have a 
-[registered account](https://www.codever.land/register) first.
+Save and search snippets to [Codever](https://www.codever.dev) from Visual Studio Code. You need to have a 
+[registered account](https://www.codever.dev/register) first.
 
-> [Extensions](https://www.codever.land/howto) are available also for browsers and IntelliJ IDEs. See our [howto](https://www.codever.land/howto) guides
+> [Extensions](https://www.codever.dev/howto) are available also for browsers and IntelliJ IDEs. See our [howto](https://www.codever.dev/howto) guides
 > to help you get started.
 
 ## Features
@@ -26,4 +26,8 @@ Use [`vsce`](https://vscode-docs.readthedocs.io/en/latest/tools/vscecli/) to pac
 
 ```shell
 vsce package
+```
+
+```shell
+vsce publish
 ```

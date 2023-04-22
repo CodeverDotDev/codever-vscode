@@ -1,9 +1,9 @@
 {
 	"name": "vscode-codever",
 	"displayName": "Codever Snippets",
-	"description": "Save and search snippets on Codever.land",
+	"description": "Save and search snippets on Codever.dev",
 	"icon": "resources/logo/logo-blue-128x128.png",
-	"version": "1.0.0",
+	"version": "1.1.1",
 	"publisher": "codever",
 	"engines": {
 		"vscode": "^1.46.0"
@@ -45,7 +45,7 @@
 				"icon": {
 					"light": "resources/logo/logo-blue-16x16.png",
 					"dark": "resources/logo/logo-blue-16x16.png"
-				}				
+				}
 			}
 		],
 		"menus": {
@@ -56,7 +56,7 @@
 				"icon": {
 					"light": "resources/logo/logo-blue-16x16.png",
 					"dark": "resources/logo/logo-blue-16x16.png"
-				}				
+				}
 			  },
 			  {
 				"command": "extension.searchSnippet",
@@ -64,7 +64,7 @@
 				"icon": {
 					"light": "resources/logo/logo-blue-16x16.png",
 					"dark": "resources/logo/logo-blue-16x16.png"
-				}				
+				}
 			  }
 			]
 		  }

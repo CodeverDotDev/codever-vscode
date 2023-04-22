@@ -20,11 +20,11 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (editor) {
 			// Display a message box to the user
-			let selectedText = editor?.document.getText(editor.selection);		
+			let selectedText = editor?.document.getText(editor.selection);
 			if(!selectedText) {
 				vscode.window.showErrorMessage('Please select text snippet before saving');
 				return;
-			}	
+			}
 			console.log('selectedText before encoding: ', selectedText);
 			selectedText = encodeText(selectedText);
 
@@ -40,17 +40,17 @@ export function activate(context: vscode.ExtensionContext) {
 					title = encodeText(title);
 					const tags = vscode.window.activeTextEditor?.document.languageId;
 					const sourceUrl = vscode.window.activeTextEditor?.document.fileName;
-					const newSnippetUrl = `https://www.codever.land/my-snippets/new?code=${selectedText}&title=${title}&tags=${tags}&sourceUrl=${sourceUrl}&ext=vscode`;					
+					const newSnippetUrl = `https://www.codever.dev/my-snippets/new?code=${selectedText}&title=${title}&tags=${tags}&sourceUrl=${sourceUrl}&ext=vscode&initiator=vscode`;
 					const newSnippetUri = Uri.parse(newSnippetUrl);
 					vscode.env.openExternal(newSnippetUri);
-				} 
+				}
 			}
 		}
 
 	});
 
 	let disposable2 = vscode.commands.registerCommand('extension.searchSnippet', async () => {
-		
+
 		const editor = vscode.window.activeTextEditor;
 		const selectedText = editor?.document.getText(editor.selection);
 
@@ -63,11 +63,11 @@ export function activate(context: vscode.ExtensionContext) {
 		if(searchQuery === ''){
 			console.log(searchQuery);
 			vscode.window.showErrorMessage('A search query is mandatory to execute this action');
-		} 
+		}
 
 		if(searchQuery !== undefined){
-			const searchUrl = `https://www.codever.land/search?q=${searchQuery}&sd=my-snippets`;
-			vscode.env.openExternal(Uri.parse(searchUrl));		
+			const searchUrl = `https://www.codever.dev/search?q=${searchQuery}&sd=my-snippets`;
+			vscode.env.openExternal(Uri.parse(searchUrl));
 		}
 	});
 
