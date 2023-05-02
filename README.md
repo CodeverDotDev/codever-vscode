@@ -22,7 +22,8 @@ Select snippet, then **right click** or **Ctrl+Shift+P** (**Cmd+Shift+P** on Mac
 
 ## Publish
 
-Use [`vsce`](https://vscode-docs.readthedocs.io/en/latest/tools/vscecli/) to package and [publish](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) the extension:
+Use [`vsce`](https://vscode-docs.readthedocs.io/en/latest/tools/vscecli/) to package
+and [publish](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) the extension:
 
 ```shell
 vsce package
@@ -31,3 +32,9 @@ vsce package
 ```shell
 vsce publish
 ```
+
+> Publisher is `codever` configured in [package.json](package.json) and the managing organisation is 
+> **CodeverDotDev**
+
+> One needs to be logged in before publishing `vsce login` where a personal access token is passed 
+> to the vsce cli

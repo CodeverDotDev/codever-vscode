@@ -4,7 +4,13 @@ All notable changes to the "codever" extension will be documented in this file.
 
 ## [Unreleased]
 
-## [1.1.1] - 2022-05-22
+## [1.2.0] - 2022-05-2
+
+### Added
+
+- Add file, workspace and location as param to the extension
+
+## [1.1.1] - 2022-04-22
 
 ### Added
 

@@ -3,7 +3,7 @@
 	"displayName": "Codever Snippets",
 	"description": "Save and search snippets on Codever.dev",
 	"icon": "resources/logo/logo-blue-128x128.png",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"publisher": "codever",
 	"engines": {
 		"vscode": "^1.46.0"
